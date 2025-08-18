@@ -1,0 +1,45 @@
+<html>
+    <title>
+        Bai 2
+    </title>
+    <body>
+        <h1>Bai 2</h1>
+        <a href="https://humg.edu.vn/Pages/home.aspx"> Liên kết HUMG</a>
+
+        <!-- <table border="1" hàm tạo viền bảng border> -->
+            <table border="1">
+            <caption>Bảng 1: Bảng thông tin sinh viên</caption>
+            <!-- hàng 1: thẻ th sẽ định nghĩa cột đầu tiên in đậm và căn giữa -->
+            <tr>
+                <th>STT</th>
+                <th colspan="2">Họ và tên</th>
+                <th>Mã số sinh viên</th>
+                <th>Lớp</th>
+            </tr>
+            <!-- Hàng 2: thẻ td sẽ định nghĩa data bên trong bảng không căn chỉnh j cả -->
+            <tr>
+                <td>1</td>
+                <td>Dương Gia</td>
+                <td>Bình</td>
+                <td>2121050495</td>
+                <td>DCCTCLC66A1</td>
+            </tr>
+            <!-- hàng 3: tương tự hàng 2 -->
+             <tr>
+                <td>2</td>
+                <td>Dương Gia</td>
+                <td>Bình 1</td>
+                <td>2121050496</td>
+                <td rowspan="2">DCCTCLC66A1</td>
+                <!-- rowspan là hàm giúp gộp 2 ô của 1 bảng thành 1  -->
+             </tr>
+             <tr>
+                <td>3</td>
+                <td>Dương Gia</td>
+                <td>Bình 2</td>
+                <td>2121050497</td>
+             </tr>
+
+        </table>
+    </body>
+</html>
