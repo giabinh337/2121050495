@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 HTML</title>
+</head>
+<body>
+    <!-- marquee để chạy văn bản hay hình ảnh trong trang web -->
+    <marquee behavior="scroll" direction="left"><img src="../image/hoian.jpg" alt=""></marquee>
+    <h1>Bài 3</h1>
+    <p>Danh sách các công việc vào buổi sáng</p>
+    <!-- Lập danh sách (List) có đánh số với thẻ ol, li -->
+    <ol>
+        <li>Thức dậy</li>
+        <li>Ăn sáng</li>
+        <li>Đánh răng rửa mặt</li>
+        <li>Đi học</li>
+        <li>Giải lao</li>
+    </ol>
+
+    <p>Các ngôn ngữ lập trình</p>
+    <!-- Lập danh sách không đánh số với thẻ ul,li -->
+    <ul>
+        <li>Python</li>
+        <li>C#</li>
+        <li>PHP</li>
+        <li>java Script</li>
+    </ul>
+
+    <h1>Thẻ Form</h1>
+    <!-- thẻ form định dạng hộp -->
+    <form>
+        <div> <!-- div là thẻ chia khối -->
+            <b>Họ và tên:</b>
+            <input type="text" name="fullname" placeholder="Nhập tên vào đây">
+
+        </div>
+        <br>
+        <div>
+            <b>Năm</b>
+            <input type="text" name="nam" value="2025" readonly>
+            <!-- readonly là để xem nội dung nhưng không được phép chỉnh sửa -->
+        </div>
+        <br>
+        <div>
+            <b>Giới thiệu chi tiết về bản thân</b><br>
+            <textarea name="gioithieu" placeholder="Nhập giới thiệu bản thân vào đây"></textarea>
+        </div>
+        <div>
+            <!-- type email để điền định dạng email -->
+            <b>Email</b><br>
+            <input type="email" name="email" placeholder="Điền email vào đây">
+        </div>
+        <br>
+        <div>
+            <!-- type tel để thêm số điện thoại -->
+            <b>Số điện thoại</b><br>
+            <input name="sodienthoai" type="tel" placeholder="Nhập số điện thoại vào đây" required pattern="([0]{1}([0,3,4,9]{1}([0-9]{8})))">
+        </div>
+        <br>
+        <div>
+            <!-- hàm radio để tạo ô chọn(chỉ được chọn 1) -->
+            <b>Giới tính</b><br>
+            <input type="radio" name="gioitinh" value="nam">Nam<br>
+            <input type="radio" name="gioitinh" value="nu">Nữ<br>
+            <input type="radio" name="gioitinh" value="khongxacdinh">Không xác định<br>
+        </div>
+        <div>
+            <!-- hàm checkbox  -->
+            <b>Sở thích</b><br>
+            <input type="checkbox" name="hobby" value="game">Game<br>
+            <input type="checkbox" name="hobby" value="music">Music<br>
+            <input type="checkbox" name="hobby" value="sleep">Ngủ<br>
+        </div>
+        <div>
+            <!-- datalist và list để tạo ô lựa chọn option ở dưới nhưng phải xóa đi và chọn lại  -->
+            <b>Trình duyệt ưa thích</b><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explore"></option>
+                <option value="Google"></option>
+                <option value="Firefox"></option>
+                <option value="Coccoc"></option>
+            </datalist>
+            <br>
+            <!-- select để chọn 1 trong những option ở dưới mà không phải xóa -->
+            <select name="browsers">
+                <option value="Internet Explore">Internet Explore</option>
+                <option value="Google">Google</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Coccoc">Coccoc</option>
+            </select>
+        </div>
+        <br>
+        <!-- range để tạo thanh kéo số(chữ) -->
+        <div>
+            0<input type="range" value="20">100
+        </div>
+        <br>
+        <div>
+            <!-- type number để định dạng số cho ô lựa chọn -->
+            <b>Tuổi</b><br>
+            <input type="number" name="tuoi" step="0.5">
+        </div><br>
+        <div>
+            <b>Ngày tháng năm sinh</b><br>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <b>màu sắc ưa thích</b>
+            <input type="color">
+        </div>
+        <br>
+        <div>
+            <b>Chọn ảnh đại diện</b>
+            <input type="file">
+        </div>
+        <br>
+        <div>
+            <b>Đặt mật khẩu</b><br>
+            <input type="password" name="mat khau" placeholder="Nhập mật khẩu vào đây">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+        <div>
+            <input type="submit">
+            <input type="button">
+
+        </div>
+    </form>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gJsczghu-d4?si=PHL0xrIkks8G0VZt" ></iframe>
+
+</body>
+</html>
