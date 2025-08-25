@@ -1,0 +1,41 @@
+h3 {
+    color: green;
+}
+
+#title {
+    color: brown;
+    background-color: aqua;
+}
+
+.bg {
+    background-color: blueviolet;
+}
+
+p {
+    color: pink;
+    background-color: brown;
+}
+
+.Box1{
+    color: blue;
+    background-color: green;
+    /* chia nửa background với width */
+    width: 50%;
+    margin: 50px auto;
+    /* margin auto căn khối ra giữa thêm các giá trị px thì sẽ điều chỉnh theo px đó nhưng vẫn ở giữa*/
+
+}
+
+.Box2{
+    color: yellow;
+    /* truyền 1 giá trị: cách xung quanh= 1 giá trị */
+    margin: 10px 20px 30px 40px;
+    /* giá trị 1:trên dưới, giá trị 2: trái phải */
+    /* nếu có 4 giá trị thì sẽ theo kim đồng hồ: trên, phải, dưới, trái */
+    background-color: aqua;
+}
+
+.Box3{
+    color: rebeccapurple;
+    background-color: powderblue;
+}
