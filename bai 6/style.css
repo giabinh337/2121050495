@@ -244,7 +244,7 @@ footer {
 
 .footer-bottom {
   width: 90%;
-  margin: 30px auto 0;
+  margin: auto;  
   padding-top: 20px;
   border-top: 1px solid #333;
   font-size: 13px;

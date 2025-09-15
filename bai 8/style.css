@@ -1,0 +1,132 @@
+body {
+    color: whitesmoke;
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; giúp căn hai khối left and right sang hai bên  */
+    align-items: center;
+    /* căn giữa giúp cân đối 2 bên của trang web */
+    width: 1000px;
+    /* căn màn hình dù rộng bao nhiêu nội dung k bị kéo dãn */
+    margin: 80px auto;
+    /* 80px: căn trên dướiđẩy container xuống cách thanh tìm kiếm 80px k bị dính */
+    /* auto: căn trái phải giúp căn giữa khối container  */
+    padding: 0 20px;
+    /* giúp nội dung không bị dính sát màn hình khi co nhỏ */
+}
+
+.left {
+    flex: 1;
+    /* giúp toàn bộ khoảng bên left sẽ giãn ra chiếm toàn bộ khoảng trống còn lại */
+    /* nếu không có flex thì left sẽ chỉ dài bằng đúng dòng chữ noidung */
+}
+
+.logo {
+    color: aqua;
+    font-size: 60px;
+    font-weight: bold; 
+    /* chữ được in đậm */
+    margin-bottom: 20px;
+    /* khoảng cách giữa logo và chữ giới thiệu (tính từ logo xuống) */
+}
+
+.noidung {
+    font-size: 24px;
+    line-height: 32px;
+    /* khoảng cách giữa các chữ được cho phép là 32px */
+    width: 400px;
+    /* giới hạn chiều rộng tối đa của đoạn nội dung là 400px */
+}
+
+.right {
+    width: 380px;
+    /* cố định right ở 380px không bị kéo dãn như left với flex bằng 1 */
+}
+
+.login-box {
+    background-color: bisque;
+    padding: 20px;
+    /* khoảng cách nội dung cách viền 20px */
+    text-align: center;
+    /* căn giữa các dòng textbox, nút bấm và cho phần link account */
+
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    /* sắp xếp phần tử: bình thường sẽ mặc định là row: sẽ sắp xếp theo chiều ngang */
+    /* nhưng nếu đổi sang column thì sẽ sắp xếp theo chiều dọc từ trên xuống dưới */
+    gap: 12px;
+    /* tạo khoảng cách các ô điền form ở bên trong loginbox */
+}
+
+.input {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+
+.login-button {
+    background: aquamarine;
+    color: brown;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    /* in đậm chữ  */
+    cursor: pointer;
+    /* điều chỉnh nút bấm khi di trỏ chuột vào */
+}
+
+.login-button :hover {
+    /* hover là phần sẽ tương tác trực tiếp với người dùng khi người dùng đưa trỏ chuột vào */
+    background: plum;
+}
+
+.Forgot {
+    color: rebeccapurple;
+    font-size: 14px;
+    text-decoration: none;
+    /* xóa dấu gạch chân */
+}
+
+.Forgot:hover {
+    text-decoration: underline;
+}
+
+hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+.create-btn {
+  background: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.create-btn:hover { background: #36a420; }
+
+.create-page {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 24px;
+}
+.create-page a {
+  color: #1c1e21;
+  text-decoration: none;
+}
+.create-page a:hover { text-decoration: underline; }
