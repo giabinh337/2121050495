@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white;
+}
+
+header {}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+.noidungtrai {
+    flex: 30%;
+    background-color: blue;
+    height: 1000px;
+
+}
+
+.noidungphai{
+  flex: 70%;
+  background-color: blue;
+  height: 1000px;
+}
+
+.noidung {
+    margin-top: 30px;
+}
+
+.danhsach-tintuc {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.baiviet {
+  position: relative;
+  height: 180px;
+  flex: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  
+}
+
+.baiviet img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+}
+
+
+.tieude, .tieude_thongbao {
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 6px 6px 0 0;
+}
+
+.bangthongbao{
+    position: relative;
+    height: 180px;
+    flex: 1;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-direction: column;
+  
+}
+
+.bangthongbao img{
+    width: 30%;
+    height: 30%;
+    flex-direction: row;
+}
+
+
+.thongbao {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}

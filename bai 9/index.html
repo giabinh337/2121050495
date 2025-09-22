@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        document.writeln("Hello World!" + "<br>");
+        //khai báo biến dùng let hoặc var
+        //Cú pháp let tên biến = Giá trị;
+        //Nối chuỗi dùng dấu +
+        let hoTen = "Gia Binh" + "<br>";
+        document.writeln(hoTen);
+
+
+
+        let soThuNhat = 0;
+        let soThuHai = "1";
+        let soThuBa = 20;
+        //phép cộng (+), trừ(-), nhân(*), chia(/)
+        ketQua = soThuHai += soThuBa;
+        //tăng 1 đơn vị dùng "++", giảm 1 đơn vị dùng "--" (dùng trước kết quả in cuối)
+        //soThuHai += soThuBa // soThuHai = soThuHai + soThuBa
+        //soThuHai -= soThuBa // soThuHai = soThuHai - soThuBa
+        //soThuHai *= soThuBa // soThuHai = soThuHai * soThuBa
+        //soThuHai /= soThuBa // soThuHai = soThuHai / soThuBa
+        //soThuHai %= soThuBa // soThuHai = soThuHai / soThuBa lấy phần dư làm kết quả
+
+        // "==", "!=" , "===", "!==", "!", ">", "<", ">=", "<="
+        //document.writeln(soThuHai !== soThuBa);
+
+        let thongTinSinhVien = {
+            hoTen: "Gia Binh",
+            mssv: "2121050495",
+            gioiTinh: true,
+            tuoi: 22,
+            lop: "ABC"
+        }
+
+        let diaChi = {
+            thanhPho: "Hà Nội",
+            phuong: "Tay Ho",
+            duong: "abc",
+            soNha: 123
+        }
+        thongTinSinhVien.diaChi = diaChi;
+
+        document.writeln("Xin chào: "
+            + thongTinSinhVien.hoTen
+            + thongTinSinhVien.tuoi 
+            + "tuổi " + " Nhà ở "
+            +thongTinSinhVien.diaChi.phuong + ""
+            + thongTinSinhVien.diaChi.duong + "<br>");
+            let namNay = 2025
+            document.writeln("Bạn " +thongTinSinhVien.hoTen + "Sinh Năm " +(namNay - thongTinSinhVien.tuoi))
+    </script>
+</body>
+
+</html>
