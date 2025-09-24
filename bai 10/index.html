@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      let thongTinDonHang = {
+        maDonHang: "12345678",
+        thongTinKhachHang: {
+          hoTen: "NguyenVanA",
+          soDienThoai: "0987654321",
+          trangThaiThanhVienThanThiet: false,
+        },
+        danhSachSanPham: {
+          sp01: {
+            maSanPham: "1",
+            tenSanPham: "Matcha",
+            soLuong: 10,
+            giaTien: "10000",
+          },
+          sp02: {
+            maSanPham: "2",
+            tenSanPham: "Cà phê",
+            soLuong: 10,
+            giaTien: "20000",
+          },
+          sp03: {
+            maSanPham: "3",
+            tenSanPham: "Trà sữa",
+            soLuong: 15,
+            giaTien: "20000",
+          },
+        },
+        thanhToanThanhCong: true,
+        diaChiGiaoHang: "Đông Ngạc",
+      };
+
+      let tongSP1 =
+        thongTinDonHang.danhSachSanPham.sp01.giaTien *
+        thongTinDonHang.danhSachSanPham.sp01.soLuong;
+      let tongSP2 =
+        thongTinDonHang.danhSachSanPham.sp02.giaTien *
+        thongTinDonHang.danhSachSanPham.sp02.soLuong;
+      let tongSP3 =
+        thongTinDonHang.danhSachSanPham.sp03.giaTien *
+        thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+      let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+      // document.writeln(
+      //   "Do dai cua ma don hang: " + thongTinDonHang.maDonHang.length
+      // );
+
+      // var myString = "Hello";
+      // document.writeln(myString[0]);
+
+      // var myString = "Hello";
+      // document.writeln(myString.slice(1, 4));
+
+      // let myString = "Hello";   // Thay thế chuỗi dùng replace
+      // document.writeln(myString.replace("Hello", "Chao ban"));
+
+      // //Chuyển đổi chữ hoa/ chữ thường (chữ thường: toLowerCase(), chữ hoa: toUpperCase() )
+      // let myString = "Hello KieN";
+      // document.writeln(myString.toLowerCase());
+
+      // indexOf tra ra vi tri xuat hien dau tien
+      // neu co : vi tri, neu k: -1
+      // let myString = "Hello KieN";
+      // document.writeln(myString.includes(`e`));
+
+      // Tach chuoi thanh mang
+      // let myString = "Hello KieN";
+      // document.writeln(myString.split(``));
+
+      // Kiem tra xem 1 chuoi co bat dau bang 1 chuoi con hay khong
+      // let danhsach = [
+      //   "Pham A",
+      //   "Nguyen B",
+      //   "Luong C",
+      //   "Duong D",
+      //   "Nguyen E",
+      // ];
+      // document.writeln(danhsach[1].startsWith("Nguyen"));
+
+      // Chuyen chuoi ve so
+      // let so = "123";
+      // document.writeln(typeof so);
+      // document.writeln(typeof Number(so));
+
+      // parseInt("10.5"); //
+      // parseFloat("10.5");
+
+      var pi = 3.14159;
+      pi.toFixed(2); //Ket qua 3.14
+
+      isNaN(10); //Ket qua true
+      isFinite(10); //Ket qua true
+
+      //Date
+      let toDay = new Date();
+// document.writeln(toDay); //Ngay gio hien tai
+      document.writeln(toDay.getDate()); // In ra ngày hiện tại
+    </script>
+  </body>
+</html>
