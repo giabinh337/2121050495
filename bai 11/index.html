@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let toDay = new Date();
+        // document.writeln(toDay.getDate());
+
+        // let a = [1, 2, 3, 4, 5, 'a', 'b', 'c', 5, 6, 8, 10, 5];
+        // let b = "abc"
+        // // document.writeln(arr.lastIndexOf(5));
+
+        // // document.writeln(Array.isArray(a));
+
+        // // array. isArray để kiểm tra xem đây có phải mảng không
+        // // indexof để xác định vị trí của mảng
+        // // lasindexof để kiểm tra vị trí xuất phát cuối cùng của các mảng
+
+
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "Javascript";
+        c = [42, "VBScipt"];
+        d = a.concat(b, c);    
+        document.writeln(d.push(""));
+
+        // concat để nối các hàm với nhau
+        // .join để thêm các phần tử chen vào giữa 
+        // .pop dùng để lấy phần tử cuối cùng
+        // push để thêm vào vị trí cuối cùng của phần tử trong mảng
+        // shift là để xóa phần tử đẩu tiền
+        // unshift là để thêm phần tử vào đầu mảng
+
+
+        let toDay = new Date();
+        let now = toDay.getHours();
+        if (now <=10){
+            document.writeln("chaobuoisang");
+        } else if (now >= 10 && now < 12) {
+            document.writeln("chaobuoitrua");
+        }
+
+
+        let so = 100000000000000001n;
+
+        if (so%2n ==0n){
+            document.writeln("sochan")
+        }else {document.writeln("sole")};
+
+
+
+
+    </script>
+    
+</body>
+</html>
