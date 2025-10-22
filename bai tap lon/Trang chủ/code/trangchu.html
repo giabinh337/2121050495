@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="trangchu.css">
+</head>
+<body>
+    <header>
+        <div class="trangchu_top">
+            <div class="top">
+                <a href="#">Shopee</a>
+                <a href="#">Tiktok</a>
+                <a href="#">Facebook</a>
+
+            </div>
+            <div class="mid">
+              
+                    <a href="#" class="logo"><img src="../images/logo.jpg" alt="logo"></a>
+                    <input type="text" name="timKiem" id="timKiem" placeholder="Nhập từ khóa sản phẩm cần tìm">
+                
+                    <a href="#" class="open-time">9:00 - 18:00</a>
+                    <a href="#" class="gach">|</a>
+                    <a href="#" class="contact">0899.178.993</a>
+                    
+                    <button class="gioHang"><a href="#">Giỏ hàng</a></button>
+                    <button class="sign-in"><a href="#">Đăng nhập/Đăng ký</a></button>
+                
+            </div>
+            
+            <div class="menu">
+                 <button onclick="toggleMenu()" class="menu-button">
+                    ☰ Danh mục sản phẩm
+                 </button>
+                <div id="dropdownMenu" class="dropdown-content">
+                 <a href="#">Giày bóng rổ</a>
+                 <a href="#">Giày Bóng Rổ Nữ</a>
+                 <a href="#">Giày Bóng Rổ Trẻ Em</a>
+                 <a href="#">Quà bóng rổ</a>
+                 <a href="#">Balo bóng rổ</a>
+                 <a href="#">Quần áo</a>
+                 <a href="#">Pro combat</a>
+                 <a href="#">Phụ kiện bóng rổ</a>
+                </div>
+            </div>
+            
+            <script>
+                // Hiện/ẩn menu khi click
+                 function toggleMenu() {
+                    document.getElementById("dropdownMenu").classList.toggle("show");
+                }
+
+                 // Ẩn menu khi click ra ngoài
+                 window.onclick = function(event) {
+                 if (!event.target.matches('.menu-button') && !event.target.closest('.menu-container')) {
+                     document.getElementById("dropdownMenu").classList.remove("show");
+                 }
+                }
+             </script>
+         </div>
+        
+    </header>
+    <main>
+        <div class="banner">
+            <a href="#"><img src="../images/banner.webp" alt="banner1"></a>
+
+        </div>
+        <div class="fact-post">
+        <div class="fact">
+            <div class="fact-item">
+                <h2> Sẵn hàng</h2>
+                <p>Tất cả sản phẩm tại Website đều có sẵn</p>
+            </div>
+
+            <div class="fact-item">
+                <h2> Ship toàn quốc</h2>
+                <p>Phí ship chỉ từ 18K trong 2 – 4 ngày</p>
+            </div>
+
+            <div class="fact-item">
+                <h2>Bảo hành, đổi trả</h2>
+                <p>Với mọi sản phẩm chúng tôi bán ra</p>
+            </div>
+            </div>
+        <div class="post">
+            <div class="post-item">
+                <a href="#"><img src="../images/post-img1.webp" alt="1"></a>
+                <a href="#" class="post-title">Đánh giá chi tiết giày bóng rổ Li-Ning Wade All City 12: Đệm Boom và Hiệu Suất Vượt Trội</a>
+                <div class="is-post small"></div>
+            </div>
+            <div class="post-item">
+                <a href="#"><img src="../images/post-img2.webp" alt="2"></a>
+                <a href="#" class="post-title">Đánh giá chi tiết – Giày bóng rổ Rigorer AR Battle 2</a>
+                <div class="is-post small"></div>
+            </div>
+            <div class="post-item">
+                <a href="#"><img src="../images/post-img3.webp" alt="3"></a>
+                <a href="#" class="post-title">Đánh Giá Li-Ning Wade All City 12 “Encore” – Tối Ưu Cho Hậu Vệ Dẫn Bóng</a>
+                <div class="is-post small"></div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-widgets">
+            <div class="widgets"">
+                <span>Thông tin cửa hàng</span>
+                <div class="is-divider small"></div>
+                
+                <ul>
+                    <li>Hộ kinh doanh Giày bóng rổ – Choibongro.vn</li>
+                    <li>Giấy phép đăng ký kinh doanh: 01F8015621</li>
+                    <li>Đăng ký lần đầu ngày: 12-06-2020</li>
+                    <li>Địa điểm: Số 22 Ngõ 332 đường Nguyễn Trãi, Phường Thanh Xuân Trung, Quận Thanh Xuân, Thành Phố Hà Nội – <a href="#"> Xem Google Maps chỉ đường</a></li>
+                    <li>Người đại diện: Phạm Anh Tuấn</li>
+                    <li>Mã số thuế: 0109376875</li>
+                    <li>Ngày cấp: 13-10-2020</li>
+                    <li>Quản lý bởi: Chi cục Thuế Quận Thanh Xuân</li>
+                </ul>
+                
+                
+            </div>
+            <div class="widgets">
+                <span>Hướng dẫn mua hàng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                </ul>
+
+            </div>
+            <div class="widgets">
+                <span>Hỗ trợ người dùng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng Website</a></li>
+                    <li><a href="#">Chính sách quyền riêng tư</a></li>
+                    <li><a href="#">Chính sách bảo vệ thông tin cá nhân của người tiêu dùng</a></li>
+                </ul>
+            </div>
+            <div class="widgets">
+                <span>Thông báo bộ công thương</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#"><img src="../images/da-thong-bao-bo-cong-thuong.png" alt="bct"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"><br>Copyright 2025 <b>© CHOIBONGRO.VN</b></div>
+    </footer>
+</body>
+</html>

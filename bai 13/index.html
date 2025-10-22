@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11</title>
+</head>
+
+<body>
+    <h1>BÀI 11</h1>
+    <!-- tạo hàm JS tính điểm của sinh viên dựa vào điểm A,B,C
+    Biết tổng điểm = A*0.6 + B*0.3 + C*0.1 -->
+    <!-- <script>
+    function tinhDiemSinhVien(A, B, C) {
+        if (isNaN(A) || isNaN(B) || isNaN(C)) {
+        document.writeln("Vui lòng nhập đủ 3 điểm hợp lệ!");
+            return;
+        }
+        let tong = A * 0.6 + B * 0.3 + C * 0.1;
+        document.writeln("Tổng điểm của sinh viên là: " + tong.toFixed(2));
+    }
+
+    tinhDiemSinhVien(3, 7.5, 9);
+    </script> -->
+    <div>
+        Diem A: <input type="number" id="diemA" placeholder="nhap diem A">
+    </div>
+    <div>
+        Diem C: <input type="number" id="diemB" placeholder="nhap diem B ">
+    </div>
+    <div>
+        Diem C: <input type="number" id="diemC" placeholder="nhap diem C">
+    </div>
+    <div></div>
+    <script>
+        function tinhDiem(a, b, c) {
+            let tong;
+            if (kiemTrahople(a, b, c) == true) {
+                tong = a * 0.6 + b * 0.3 + c * 0.1;
+                document.writeln(tong);
+            }
+            else if (tong >= 9) {
+                document.writeln("diem cua ban la A+");
+            }
+            else if (tong >= 8.5 || tong < 9) {
+                document.writeln("diem cua ban la A");
+            }
+            else if (tong >= 8 || tong < 8.5) {
+                document.writeln("diem cua ban la B+");
+            }
+            else if (tong >= 7 || tong < 7.5) {
+                document.writeln("diem cua ban la B");
+            }
+        }
+
+        function kiemTrahople() {
+            if (a < 0 || a > 10 || typeof (a) != 'number') {
+                document.writeln("Điểm A không hợp lệ");
+            }
+
+            if (b < 0 || b > 10 || typeof (b) != 'number') {
+                document.writeln("Điểm B không hợp lệ");
+            }
+            if (c < 0 || c > 10 || typeof (c) != 'number') {
+                document.writeln("Điểm C không hợp lệ");
+            }
+        }
+        let a = 10;
+        let b = 9;
+        let c = 2;
+        tinhDiem(a, b, c);
+    </script>
+</body>
+
+</html>

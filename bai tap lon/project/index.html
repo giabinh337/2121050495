@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giày bóng rổ Nam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="trangchu_top">
+            <div class="top">
+                <a href="#">Shopee</a>
+                <a href="#">Tiktok</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <div class="mid">
+                <a href="#" class="logo"><img src="../project/image/logo.jpg" alt="logo"></a>
+                <input type="text" name="timKiem" id="timKiem" placeholder="Tìm giày bóng rổ nam...">
+                <a href="#" class="open-time">9:00 - 18:00</a>
+                <a href="#" class="gach">|</a>
+                <a href="#" class="contact">0899.178.993</a>
+                <button class="gioHang"><a href="#">Giỏ hàng</a></button>
+                <button class="sign-in"><a href="#">Đăng nhập/Đăng ký</a></button>
+            </div>
+
+            <div class="menu">
+                <button onclick="toggleMenu()" class="menu-button">☰ Danh mục sản phẩm</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="#">Giày bóng rổ Nam</a>
+                    <a href="#">Giày bóng rổ Nữ</a>
+                    <a href="#">Giày bóng rổ Trẻ em</a>
+                    <a href="#">Quả bóng rổ</a>
+                    <a href="#">Balo bóng rổ</a>
+                    <a href="#">Quần áo</a>
+                    <a href="#">Pro combat</a>
+                    <a href="#">Phụ kiện bóng rổ</a>
+                </div>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    document.getElementById("dropdownMenu").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('.menu-button') && !event.target.closest('.menu-container')) {
+                        document.getElementById("dropdownMenu").classList.remove("show");
+                    }
+                }
+            </script>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-main">
+            <div class="danhmuc">
+                <a href="#">Trang chủ</a> /
+                <a href="#">Giày bóng rổ</a> /
+                <b>Giày bóng rổ Nam</b>
+            </div>
+            <div class="arrange">
+                <span>Hiển thị 8 kết quả</span>
+                <select name="type-arrange" id="sapxep">
+                    <option>Sắp xếp theo mới nhất</option>
+                    <option>Sắp xếp theo mức độ phổ biến</option>
+                    <option>Sắp xếp theo xếp hạng trung bình</option>
+                    <option>Sắp xếp theo giá: Thấp đến cao</option>
+                    <option>Sắp xếp theo giá: Cao đến thấp</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bot-main">
+            <div class="left-bot-main">
+                <span class="danhmucsanpham">Danh mục sản phẩm</span>
+                <div class="is-divider small"></div>
+
+                <div class="sidebar">
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Giày bóng rổ Nam</a></span>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Cổ cao (High-top)</a></li>
+                            <li><a href="#">Cổ thấp (Low-top)</a></li>
+                            <li><a href="#">Outdoor bền đế</a></li>
+                            <li><a href="#">Indoor thi đấu</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Giày bóng rổ Nữ</a></span>
+                        </div>
+                        <ul class="category-list"></ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Giày bóng rổ Trẻ em</a></span>
+                        </div>
+                        <ul class="category-list"></ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Quả bóng rổ</a></span>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Geru Star</a></li>
+                            <li><a href="#">Jogarbola</a></li>
+                            <li><a href="#">Molten</a></li>
+                            <li><a href="#">Chất liệu cao su</a></li>
+                            <li><a href="#">Chất liệu da</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Balo bóng rổ</a></span>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Air Hoop Elite</a></li>
+                            <li><a href="#">Utility Speed</a></li>
+                            <li><a href="#">Chính hãng</a></li>
+                            <li><a href="#">Replica</a></li>
+                            <li><a href="#">Khác</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Quần áo</a></span>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Bộ NBA</a></li>
+                            <li><a href="#">Áo bóng rổ</a></li>
+                            <li><a href="#">Quần bóng rổ</a></li>
+                            <li><a href="#">Trẻ em</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Pro combat</a></span>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Áo</a></li>
+                            <li><a href="#">Quần</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                            <span class="title"><a href="#">Phụ kiện bóng rổ</a></span>
+                        </div>
+                        <ul class="category-list"></ul>
+                    </div>
+                </div>
+
+                <div class="size-range">
+                    <span style="font-size: large;"><b>Size (EU)</b></span>
+                    <div class="is-divider small"></div>
+                    <select name="size-arrange" id="size">
+                        <option>Bất kỳ size</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                </div>
+
+                <div class="brand-range">
+                    <span style="font-size: large;"><b>Hãng</b></span>
+                    <div class="is-divider small"></div>
+                    <select name="brand-arrange" id="brand">
+                        <option>Bất kỳ</option>
+                        <option>Nike</option>
+                        <option>Adidas</option>
+                        <option>Li-Ning</option>
+                        <option>Anta</option>
+                        <option>Peak</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="right-bot-main">
+                <div class="right-bot-content">
+                    <!-- 1 -->
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../project/image/Giay 1.webp" alt="Nike LeBron Witness 7"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">GIÀY BÓNG RỔ NAM</span>
+                            <br><span><a href="#" class="type">Nike LeBron Witness 7 - Outdoor</a></span>
+                            <br><span><b>1,590,000₫</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 1 goc 1.webp" alt="Màu 1"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 1 goc 2.webp" alt="Màu 2"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 1 goc 3.webp" alt="Màu 3"></a></div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../project/image/Giay 2.jpg" alt="Adidas Harden Stepback 3"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">GIÀY BÓNG RỔ NAM</span>
+                            <br><span><a href="#" class="type">Adidas Harden Stepback 3 - Low-top</a></span>
+                            <br><span><b>1,390,000₫</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic"><a href="#"><img src="../project/image/Giay 2 goc 1.webp" alt="Màu 1"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/Giay 2 goc 2.jpg" alt="Màu 2"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 2 goc 3.webp" alt="Màu 3"></a></div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../project/image/Giay 3.webp" alt="Li-Ning Speed 8"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">GIÀY BÓNG RỔ NAM</span>
+                            <br><span><a href="#" class="type">Lightning Speed 8 </a></span>
+                            <br><span><b>1,290,000₫</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 3 goc 1.webp" alt="Màu 1"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 3 goc 2.webp" alt="Màu 2"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 3 goc 3.webp" alt="Màu 3"></a></div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../project/image/giay 4.webp" alt="Anta KT Outdoor"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">GIÀY BÓNG RỔ NAM</span>
+                            <br><span><a href="#" class="type">Anta KT Outdoor</a></span>
+                            <br><span><b>1,150,000₫</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 4 goc 1.webp" alt="Màu 1"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 4 goc 2.webp" alt="Màu 2"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 4 goc 3.webp" alt="Màu 3"></a></div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../project/image/giay 5.webp" alt="Peak Taichi Flash"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">GIÀY BÓNG RỔ NAM</span>
+                            <br><span><a href="#" class="type">Peak Taichi Flash</a></span>
+                            <br><span><b>1,190,000₫</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 5 goc 1.webp" alt="Màu 1"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 5 goc 2.webp" alt="Màu 2"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 5 goc 3.webp" alt="Màu 3"></a></div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../project/image/giay 6.avif" alt="Adidas Dame Certified"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">GIÀY BÓNG RỔ NAM</span>
+                            <br><span><a href="#" class="type">Adidas Dame Certified</a></span>
+                            <br><span><b>1,450,000₫</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 6 goc 1.avif" alt="Màu 1"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 6 goc 2.avif" alt="Màu 2"></a></div>
+                            <div class="icon-pic"><a href="#"><img src="../project/image/giay 6 goc 3.avif" alt="Màu 3"></a></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const arrows = document.querySelectorAll(".category .arrow");
+                arrows.forEach(arrow => {
+                    arrow.addEventListener("click", function() {
+                        const category = this.closest(".category");
+                        category.classList.toggle("open");
+                    });
+                });
+            });
+        </script>
+    </main>
+
+    <footer>
+        <div class="footer-widgets">
+            <div class="widgets">
+                <span>Thông tin cửa hàng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li>Hộ kinh doanh Giày bóng rổ – Choibongro.vn</li>
+                    <li>Giấy phép đăng ký kinh doanh: 01F8015621</li>
+                    <li>Đăng ký lần đầu ngày: 12-06-2020</li>
+                    <li>Địa điểm: Số 22 Ngõ 332 đường Nguyễn Trãi, Phường Thanh Xuân Trung, Quận Thanh Xuân, Hà Nội – <a href="#">Xem Google Maps chỉ đường</a></li>
+                    <li>Người đại diện: Phạm Anh Tuấn</li>
+                    <li>Mã số thuế: 0109376875</li>
+                    <li>Ngày cấp: 13-10-2020</li>
+                    <li>Quản lý bởi: Chi cục Thuế Quận Thanh Xuân</li>
+                </ul>
+            </div>
+
+            <div class="widgets">
+                <span>Hướng dẫn mua hàng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                </ul>
+            </div>
+
+            <div class="widgets">
+                <span>Hỗ trợ người dùng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng Website</a></li>
+                    <li><a href="#">Chính sách quyền riêng tư</a></li>
+                    <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+                </ul>
+            </div>
+
+            <div class="widgets">
+                <span>Thông báo bộ công thương</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#"><img src="../project/image/da-thong-bao-bo-cong-thuong.png" alt="bct"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"><br>Copyright 2025 <b>© CHOIBONGRO.VN</b></div>
+    </footer>
+</body>
+</html>

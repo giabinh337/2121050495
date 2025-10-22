@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang 1: Quần áo</title>
+    <link rel="stylesheet" href="trang1.css">
+</head>
+<body>
+    <header>
+        <div class="trangchu_top">
+            <div class="top">
+                <a href="#">Shopee</a>
+                <a href="#">Tiktok</a>
+                <a href="#">Facebook</a>
+
+            </div>
+            <div class="mid">
+              
+                    <a href="#" class="logo"><img src="../images/logo.jpg" alt="logo"></a>
+                    <input type="text" name="timKiem" id="timKiem" placeholder="Nhập từ khóa sản phẩm cần tìm">
+                
+                    <a href="#" class="open-time">9:00 - 18:00</a>
+                    <a href="#" class="gach">|</a>
+                    <a href="#" class="contact">0899.178.993</a>
+                    
+                    <button class="gioHang"><a href="#">Giỏ hàng</a></button>
+                    <button class="sign-in"><a href="#">Đăng nhập/Đăng ký</a></button>
+                
+            </div>
+            
+            <div class="menu">
+                 <button onclick="toggleMenu()" class="menu-button">
+                    ☰ Danh mục sản phẩm
+                 </button>
+                <div id="dropdownMenu" class="dropdown-content">
+                 <a href="#">Giày bóng rổ</a>
+                 <a href="#">Giày Bóng Rổ Nữ</a>
+                 <a href="#">Giày Bóng Rổ Trẻ Em</a>
+                 <a href="#">Quà bóng rổ</a>
+                 <a href="#">Balo bóng rổ</a>
+                 <a href="#">Quần áo</a>
+                 <a href="#">Pro combat</a>
+                 <a href="#">Phụ kiện bóng rổ</a>
+                </div>
+            </div>
+            
+            <script>
+                // Hiện/ẩn menu khi click
+                 function toggleMenu() {
+                    document.getElementById("dropdownMenu").classList.toggle("show");
+                }
+
+                 // Ẩn menu khi click ra ngoài
+                 window.onclick = function(event) {
+                 if (!event.target.matches('.menu-button') && !event.target.closest('.menu-container')) {
+                     document.getElementById("dropdownMenu").classList.remove("show");
+                 }
+                }
+             </script>
+         </div>
+    </header>
+    <main>
+        <div class="top-main">
+            <div class="danhmuc">
+                <a href="#">Trang chủ</a> / <a href="#">Quần áo bóng rổ</a> / <b>Bộ quần áo thi đấu NBA</b>
+            </div>
+            <div class="arrange">
+                <span>Hiển thị 8 kết quả  </span>  
+                <select name="type-arrange" id="sapxep">
+                    <option value="">Sắp xếp theo mới nhất</option>
+                    <option value="">Sắp xếp theo mức độ phổ biến</option>
+                    <option value="">Sắp xếp theo xếp hạng trung bình</option>
+                    <option value="">Sắp xếp theo giá: Thấp đến cao</option>
+                    <option value="">Sắp xếp theo giá: Cao đến thấp</option>
+                </select>
+            </div>
+        </div>
+        <div class="bot-main">
+            <div class="left-bot-main">
+                <span class="danhmucsanpham">Danh mục sản phẩm</span>
+                <div class="is-divider small"></div>
+                <div class="sidebar">
+
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Giày bóng rổ</a></span>
+                        <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                        <li><a href="#">Chính hãng</a></li>
+                        <li><a href="#">Like-New & Đã qua sử dụng</a></li>
+                        <li><a href="#">Replica</a></li>
+                        <li><a href="#">Cơ bản giá rẻ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Giày Bóng Rổ Nữ</a></span>
+                        </div>
+                        <ul class="category-list"></ul>
+                        
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Giày bóng rổ trẻ em</a></span>
+                        </div>
+                        <ul class="category-list">
+                        </ul>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Quả bóng rổ</a></span>
+                        <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Geru Star</a></li>
+                            <li><a href="#">Jogarbola</a></li>
+                            <li><a href="#">Molten</a></li>
+                            <li><a href="#">Chất liệu cao su</a></li>
+                            <li><a href="#">Chất liệu da</a></li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Balo bóng rổ</a></span>
+                        <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Air Hoop Elite</a></li>
+                            <li><a href="#">Utility Speed</a></li>
+                            <li><a href="#">Chính hãng</a></li>
+                            <li><a href="#">Replica</a></li>
+                            <li><a href="#">Khác</a></li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Quần áo</a></span>
+                        <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Bộ NBA</a></li>
+                            <li><a href="#">Áo bóng rổ</a></li>
+                            <li><a href="#">Quần bóng rổ</a></li>
+                            <li><a href="#">Trẻ em</a></li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Pro combat</a></span>
+                        <span class="arrow">&#9662;</span>
+                        </div>
+                        <ul class="category-list">
+                            <li><a href="#">Áo</a></li>
+                            <li><a href="#">Quần</a></li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <div class="category-header">
+                        <span class="title"><a href="#">Phụ kiện bóng rổ</a></span>
+                        </div>
+                        <ul class="category-list">
+                        </ul>
+                    </div>
+                </div>
+                <div class="size-range">
+                    <span style="font-size: large;"><b>Kích cỡ</b> </span>  
+                    <div class="is-divider small"></div>
+                    <select name="size-arrange" id="size" >
+                        <option value="">Bất kỳ size</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">2XL</option>
+                        <option value="">3XL</option>
+                        
+                    </select>
+                </div>
+                <div class="brand-range">
+                    <span style="font-size: large;"><b>Hãng</b></span> </span>  
+                    <div class="is-divider small"></div>
+                    <select name="brand-arrange" id="brand" >
+                        <option value="">Bất kỳ </option>
+                        <option value="">Nike</option>
+                        <option value="">Adidas</option>
+                        <option value="">Puma</option>
+                        
+                    </select>
+                </div>               
+            </div>
+            <div class="right-bot-main">
+                <div class="right-bot-content">
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/NBA-1.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-1.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-1.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-1.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/pic-con-2.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-2.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-2.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-2.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/con-3.png" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-3.png" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-3.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-3.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/con-4.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-4.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-4.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-4.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/con-5.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-5.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-5.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-5.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/con-6.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-6.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-6.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-6.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/con-7.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-7.jpg"alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-7.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-7.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content-image">
+                            <a href="#"><img src="../images/con-8.jpg" alt="NBA"></a>
+                        </div>
+                        <div class="content-infor">
+                            <span style="color: gray; font-size: small;">BỘ QUẦN ÁO THI ĐẤU NBA</span>
+                            <br><span><a href="#" class="type">Bộ quần áo bóng rổ Dwayne Wade – Miami Heats</a></span>
+                            <br><span><b>160,000VND</b></span>
+                        </div>
+                        <div class="content-colorway">
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-1-con-8.jpg "alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-2-con-8.jpg" alt="pic"></a>
+                            </div>
+                            <div class="icon-pic">
+                                <a href="#"><img src="../images/pic-3-con-8.jpg" alt="pic"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script> // Đóng - mở danh sách
+            document.addEventListener("DOMContentLoaded", function() {
+            const arrows = document.querySelectorAll(".category .arrow");
+
+            arrows.forEach(arrow => {
+                arrow.addEventListener("click", function() {
+                    const category = this.closest(".category");
+                     category.classList.toggle("open");
+                    });
+                });
+            });
+        </script>
+    </main>
+    <footer>
+        <div class="footer-widgets">
+            <div class="widgets"">
+                <span>Thông tin cửa hàng</span>
+                <div class="is-divider small"></div>
+                
+                <ul>
+                    <li>Hộ kinh doanh Giày bóng rổ – Choibongro.vn</li>
+                    <li>Giấy phép đăng ký kinh doanh: 01F8015621</li>
+                    <li>Đăng ký lần đầu ngày: 12-06-2020</li>
+                    <li>Địa điểm: Số 22 Ngõ 332 đường Nguyễn Trãi, Phường Thanh Xuân Trung, Quận Thanh Xuân, Thành Phố Hà Nội – <a href="#"> Xem Google Maps chỉ đường</a></li>
+                    <li>Người đại diện: Phạm Anh Tuấn</li>
+                    <li>Mã số thuế: 0109376875</li>
+                    <li>Ngày cấp: 13-10-2020</li>
+                    <li>Quản lý bởi: Chi cục Thuế Quận Thanh Xuân</li>
+                </ul>
+                
+                
+            </div>
+            <div class="widgets">
+                <span>Hướng dẫn mua hàng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                </ul>
+
+            </div>
+            <div class="widgets">
+                <span>Hỗ trợ người dùng</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng Website</a></li>
+                    <li><a href="#">Chính sách quyền riêng tư</a></li>
+                    <li><a href="#">Chính sách bảo vệ thông tin cá nhân của người tiêu dùng</a></li>
+                </ul>
+            </div>
+            <div class="widgets">
+                <span>Thông báo bộ công thương</span>
+                <div class="is-divider small"></div>
+                <ul>
+                    <li><a href="#"><img src="../images/da-thong-bao-bo-cong-thuong.png" alt="bct"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"><br>Copyright 2025 <b>© CHOIBONGRO.VN</b></div>
+    </footer>
+</body>
+</html> 
