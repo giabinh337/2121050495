@@ -18,7 +18,7 @@
             return;
         }
         let tong = A * 0.6 + B * 0.3 + C * 0.1;
-        document.writeln("Tổng điểm của sinh viên là: " + tong.toFixed(2));
+        document.writeln("Tổng điểm của sinh viên là: " + tong.toFixed(2)); // tofixed la lam tron
     }
 
     tinhDiemSinhVien(3, 7.5, 9);
@@ -32,8 +32,19 @@
     <div>
         Diem C: <input type="number" id="diemC" placeholder="nhap diem C">
     </div>
-    <div></div>
+    <div>
+        <button onclick="xemKetQua()">Tính điểm</button>
+    </div>
+    <div>
+        Kết Quả: <input type="text" id="ketQua">
+    </div>
     <script>
+        function xemKetQua(){
+            let diemA = parseFloat(document.getElementById('diemA').value); //parsefloat đổi string sang số thực
+            let diemB = parseFloat(document.getElementById('diemB').value);
+            let diemC = parseFloat(document.getElementById('diemC').value);
+            tinhDiem(diemA, diemB, diemC);
+        }
         function tinhDiem(a, b, c) {
             let tong;
             if (kiemTrahople(a, b, c) == true) {
@@ -66,10 +77,10 @@
                 document.writeln("Điểm C không hợp lệ");
             }
         }
-        let a = 10;
-        let b = 9;
-        let c = 2;
-        tinhDiem(a, b, c);
+        //let a = 10;
+        //let b = 9;
+        //let c = 2;
+        //tinhDiem(a, b, c);
     </script>
 </body>
 

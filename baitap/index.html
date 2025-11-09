@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f6fff8;
+        }
+
+        h1 {
+            color: #2b2b2b;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        #ketqua {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        img {
+            width: 160px;
+            margin-top: 10px;
+        }
+
+        .yeu-cau {
+            color: red;
+            text-align: left;
+            width: 400px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tính chỉ số BMI</h1>
+    <p>Công thức: Cân nặng / (Chiều cao × Chiều cao)</p>
+    <p>Cân nặng (kg) | Chiều cao (m)</p>
+
+    <input type="number" id="can" placeholder="Nhập cân nặng (kg)">
+    <input type="number" id="cao" placeholder="Nhập chiều cao (m)" step="0.01">
+    <button onclick="tinhBMI()">Kiểm tra BMI</button>
+
+    <div id="ketqua"></div>
+    <div id="anh"></div>
+
+
+    <script>
+        function tinhBMI() {
+            const can = parseFloat(document.getElementById("can").value);
+            const cao = parseFloat(document.getElementById("cao").value);
+            const ketqua = document.getElementById("ketqua");
+            const anh = document.getElementById("anh");
+
+            if (isNaN(can) || isNaN(cao) || can <= 0 || cao <= 0) {
+                alert("Vui lòng nhập đúng cân nặng và chiều cao hợp lệ (ví dụ: 57kg, 1.72m)!");
+                ketqua.innerText = "";
+                anh.innerHTML = "";
+                return;
+            }
+
+            // Tính BMI
+            const bmi = (can / (cao * cao)).toFixed(1);
+            ketqua.innerText = `Chỉ số BMI của bạn là: ${bmi}`;
+
+            let hinh = "";
+            if (bmi < 18.5) {
+                hinh = "thieu.png";
+            } else if (bmi < 25) {
+                hinh = "binhthuong.png";
+            } else if (bmi < 30) {
+                hinh = "thua.png";
+            } else if (bmi < 40) {
+                hinh = "beocapdo1.png";
+            } else {
+                hinh = "beonang.png";
+            }
+
+            anh.innerHTML = `<img src="${hinh}" alt="Kết quả BMI">`;
+        }
+    </script>
+</body>
+
+</html>

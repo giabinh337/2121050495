@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            text-align: center;
+        }
+        .anh img{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thay đổi nền sáng/tối-->
+     <h2>Ví dụ Đổi chế độ</h2>
+     <div class="anh">
+        <img src="../image/b827cc644198cac69389.jpg" alt="anh" id="anh">
+     </div>
+     <h2>Chế độ sáng</h2>
+     <div>
+        <button onclick="doiChedo()">Đổi chế độ</button>
+     </div>
+     <script>
+        let cheDo=true;
+        function doiChedo(){
+           if (cheDo==true){
+            document.getElementsByTagName('body')[0].style='background-color: black';
+            document.getElementsByTagName('h2')[1].innerHTML='Chế độ tối'
+            document.getElementsByTagName('h2')[1].style='color: white'
+            document.getElementsByTagName('h2')[0].style='color:white'
+            document.getElementsByTagName('img')[0].src='mặt trăng.jfif'
+            cheDo=false 
+           }
+           else{
+            document.getElementsByTagName('body')[0].style='background-color: white';
+            document.getElementsByTagName('h2')[1].innerHTML='Chế độ sáng'
+            document.getElementsByTagName('h2')[1].style='color: black'
+            document.getElementsByTagName('h2')[0].style='color:black'
+            document.getElementsByTagName('img')[0].src='mặt trời.jfif'
+            cheDo=true
+           }
+        }
+     </script>
+</body>
+</html>
